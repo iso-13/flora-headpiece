@@ -163,12 +163,16 @@ header{
 }
 
 /* start filter section */
-.filters{
+
+.filters-container{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
+    position: sticky;
+    top: 1rem;
 }
+
 .filters .search input{
     border: 1px solid black;
     border-radius: 5px;
