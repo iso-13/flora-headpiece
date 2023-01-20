@@ -311,6 +311,7 @@ header{
         top: 5rem;
         left: 0;
         padding: 1rem;
+        z-index: 10;
     }
 
     .nav-links.open-nav li a {
