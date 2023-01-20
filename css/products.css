@@ -360,7 +360,7 @@ header{
         margin: 2rem 0.2rem;
         grid-template-columns: 110px 1fr;
     }
-    .filters{
+    .filters-container{
         padding: 0;
     }
 }
