@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="center">
+            <div class="nav-center">
+                <div class="links-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="">products</a></li>
+                        <li><a href="">contact</a></li>
+                        <div class="social-container">
+                            <ul class="social">
+                                <li><a href="https://www.instagram.com/floraa_headpiece/?hl=en" target="_blank"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/sara_abueleneen" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/floraa_headpiece/?hl=en" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <button class="menu-btn btn">
+                        <i class="fas fa-bars"></i>
+                        <!-- <span class="arrow-btn"></span> -->
+                    </button>
+                </div>
+                <div class="logo-container">
+                    <img src="./images/logo.jpg" alt="" class="logo">
+                </div>
+                <div class="cart-container">
+                    <i class="fa-solid fa-cart-arrow-down cart-icon"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="center head-text">home / products</div>
+    </header>
+    <section class="products">
+        <div class="filters">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="company-filter">
+                <h4>Company</h4>
+                <ul class="company-list">
+                    <li data-filter="all">all</li>
+                    <li data-filter="ikea">ikea</li>
+                    <li data-filter="marcos">marcos</li>
+                    <li data-filter="apple">apple</li>
+                    <li data-filter="nike">nike</li>
+                </ul>
+            </div>
+            <div class="price-filter">
+                <h4>Price</h4>
+                <input type="range" min="0" value="50" max="100">
+                <div class="price-value">Value : $ <span>80</span></div>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="card" data-company="apple">
+                <div class="card-img-container">
+                    <img src="./images/item-01.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">bla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="nike">
+                <div class="card-img-container">
+                    <img src="./images/item-02.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">abla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="apple">
+                <div class="card-img-container">
+                    <img src="./images/item-01.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">bbla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="ikea">
+                <div class="card-img-container">
+                    <img src="./images/item-03.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">bla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="marcos">
+                <div class="card-img-container">
+                    <img src="./images/item-04.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">cbla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="nike">
+                <div class="card-img-container">
+                    <img src="./images/item-02.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">dbla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="ikea">
+                <div class="card-img-container">
+                    <img src="./images/item-03.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">ebla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="apple">
+                <div class="card-img-container">
+                    <img src="./images/item-01.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">fbla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="marcos">
+                <div class="card-img-container">
+                    <img src="./images/item-04.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">gbla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+            <div class="card" data-company="nike">
+                <div class="card-img-container">
+                    <img src="./images/item-02.jpeg" alt="" class="product-img">
+                    <div class="overlay-img">
+                        <div class="text">
+                            <button class="add-btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4 class="product-name">hbla bla</h4>
+                    <p class="price">E.P <span>500</span></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
