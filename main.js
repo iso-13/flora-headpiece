@@ -6,46 +6,25 @@ menuBtn.addEventListener("click", btn => {
     menuBtn.classList.toggle("menu-active");
     links.classList.toggle("open-nav")
 });
-// filter
-let companies = document.querySelectorAll(".company-list li");
-let products = document.querySelectorAll(".card");
+// open cart
+const openCart = document.querySelector(".cart-container");
 
-companies.forEach(function(company){
-    let brand = company.dataset.filter;
-
-    company.addEventListener("click", function(e){
-        products.forEach(function(product){
-            let productBrand = product.dataset.company;
-
-            if (brand == "all") {
-                product.style.display = "block";
-            } else {
-                if(productBrand == brand){
-                    product.style.display = "block"
-                } else {
-                    product.style.display = "none";
-                }
-            }          
-        })
-    })
+openCart.addEventListener("click", function(){
+    cartSection.classList.toggle("show-cart")
 })
+// close cart
+const closeBtn = document.querySelector(".close-btn");
+let cartSection = document.querySelector('.cart-box');
 
-// search function
-let searchScreen = document.querySelector(".search input");
-let productNames = document.querySelectorAll(".product-name");
+closeBtn.addEventListener("click", function(){
+    cartSection.classList.toggle("show-cart")
+})
+// add to cart
+let cartCount = document.querySelector(".cart-count");
+let addBtns = document.querySelectorAll(".add-btn");
 
-searchScreen.addEventListener("keyup", function(){
-    productNames.forEach(function(item){
-
-        let searchValue = searchScreen.value.trim();
-        let lenght = searchValue.length;
-        let match = item.innerHTML.slice(0, lenght);
-
-        if (searchValue == match) {
-            item.parentNode.parentElement.style.display = "block";
-        } else{
-            item.parentNode.parentElement.style.display = "none"
-        }
-        
+addBtns.forEach(function(btn) {
+    btn.addEventListener("click", function(e){
+        cartCount.innerHTML++
     })
 })
