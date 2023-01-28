@@ -144,7 +144,6 @@ body {
 .hide{
     display: none;
 }
-
 /* end cart section */
 
 .center {
@@ -246,7 +245,6 @@ body {
 .section-center {
     margin: 2rem;
 }
-
 /* products section */
 
 header{
@@ -264,7 +262,6 @@ header{
     align-items: center;
     padding: 1rem;
 }
-
 /* start filter section */
 
 .filters-container{
@@ -301,11 +298,18 @@ header{
     color: hsl(210deg 22% 49%);
     letter-spacing: 0.1rem;
     text-transform: capitalize;
+}
+.filters .company-filter ul li{
     cursor: pointer;
 }
 .filters .price-filter input{
     padding: 0.25rem 0;
     width: 60%;
+    cursor: pointer;
+}
+.filters .price-value span{
+    font-weight: bold;
+    color: var(--main-clr);
 }
 /* end filter section */
 
@@ -451,17 +455,13 @@ header{
         background-color: transparent;
     }
 
-    main {
-        background-size: 100% 100%;
-    }
-
-    .shopping-btn {
-        bottom: 5rem;
-        font-size: 1rem;
-    }
     .products{
         margin: 2rem 0.2rem;
         grid-template-columns: 110px 1fr;
+    }
+    .card{
+        max-width: 280px;
+        max-height: 280px;
     }
     .filters-container{
         padding: 0;
