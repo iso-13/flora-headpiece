@@ -26,7 +26,7 @@ filterBtns.forEach(function(btn){
 const searchPrice = document.querySelector(".search-price");
 let priceValue = document.querySelector(".price-value span")
 
-searchPrice.addEventListener("mouseup", (e)=>{
+searchPrice.addEventListener("input", (e)=>{
     let value = e.target.value;
     priceValue.innerHTML = value;
     
