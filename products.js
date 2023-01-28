@@ -1,11 +1,11 @@
-// filter
-let companies = document.querySelectorAll(".company-list li");
+// filter by name
+let filterBtns = document.querySelectorAll(".company-list li");
 let products = document.querySelectorAll(".card");
 
-companies.forEach(function(company){
-    let brand = company.dataset.filter;
+filterBtns.forEach(function(btn){
+    let brand = btn.dataset.filter;
 
-    company.addEventListener("click", function(e){
+    btn.addEventListener("click", function(e){
         products.forEach(function(product){
             let productBrand = product.dataset.company;
 
@@ -19,6 +19,29 @@ companies.forEach(function(company){
                 }
             }          
         })
+    })
+})
+
+// filter by price
+const searchPrice = document.querySelector(".search-price");
+let priceValue = document.querySelector(".price-value span")
+
+searchPrice.addEventListener("mouseup", (e)=>{
+    let value = e.target.value;
+    priceValue.innerHTML = value;
+    
+    products.forEach(product => {
+        const productPrice =  product.lastElementChild.lastElementChild.lastElementChild.innerHTML;
+
+        if (value == 1000) {
+            product.style.display = "block";
+        } else {
+            if(value >= productPrice){
+                product.style.display = "block"
+            } else {
+                product.style.display = "none";
+            }
+        }   
     })
 })
 
